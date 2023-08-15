@@ -1,7 +1,7 @@
 import React from 'react'
 import SubChild from './SubChild'
 
-function Child({ userData }) {
+const Child = () =>  {
     return (
         <>
             <h3>Child</h3>

@@ -3,14 +3,15 @@ import Child from './Child'
 import { UserContext } from '../context/userContext'
 
 
-function Parent({ userData, setUser }) {
-    const temp = useContext(UserContext);
-    console.log(temp)
+const Parent = () => {
+    const { developer } = useContext(UserContext);
 
     return (
         <>
             <h1>Parent</h1>
-            <Child userData={userData} setUser={{setUser}}/>
+            <p>El developer se llama {developer}</p>
+            <hr />
+            <Child />
         </>
     )
 }
